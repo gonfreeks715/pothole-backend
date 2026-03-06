@@ -9,7 +9,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-frontend.vercel.app'],
+  origin: [
+    'http://localhost:3000',
+    'https://pothole-frontend-two.vercel.app'   // your Vercel frontend URL
+  ],
   credentials: true
 }));
 app.use(express.json());
